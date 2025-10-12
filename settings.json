@@ -25,7 +25,6 @@
             "strings": true
         },
         "linkedEditing": true,
-        "renderControlCharacters": false,
         "colorDecorators": true,
         "selectionHighlight": false,
         "occurrencesHighlight": "off",
@@ -130,6 +129,76 @@
     "explorer.compactFolders": false,
     "explorer.decorations.badges": true,
     "breadcrumbs.enabled": true,
+    // Rigorous syntax highlighting and diagnostics
+    "editor.semanticHighlighting.enabled": true,
+    "editor.semanticTokenColorCustomizations": {
+        "enabled": true,
+        "rules": {
+            "variable": {
+                "foreground": "#9CDCFE"
+            },
+            "variable.readonly": {
+                "foreground": "#4EC9B0",
+                "fontStyle": "italic"
+            },
+            "parameter": {
+                "foreground": "#C586C0"
+            },
+            "property": {
+                "foreground": "#9CDCFE"
+            },
+            "function": {
+                "foreground": "#DCDCAA"
+            },
+            "method": {
+                "foreground": "#DCDCAA"
+            },
+            "keyword": {
+                "foreground": "#569CD6",
+                "fontStyle": "bold"
+            },
+            "class": {
+                "foreground": "#4EC9B0",
+                "fontStyle": "bold"
+            },
+            "interface": {
+                "foreground": "#B8D7A3"
+            },
+            "enum": {
+                "foreground": "#B8D7A3"
+            },
+            "type": {
+                "foreground": "#4EC9B0"
+            },
+            "string": {
+                "foreground": "#CE9178"
+            },
+            "number": {
+                "foreground": "#B5CEA8"
+            },
+            "comment": {
+                "foreground": "#6A9955",
+                "fontStyle": "italic"
+            },
+            "regexp": {
+                "foreground": "#D16969"
+            }
+        }
+    },
+    "workbench.colorCustomizations": {
+        "editorError.foreground": "#F44747",
+        "editorWarning.foreground": "#FF8800",
+        "editorInfo.foreground": "#9CDCFE",
+        "editorHint.foreground": "#D7BA7D",
+        "editorError.border": "#F44747",
+        "editorWarning.border": "#FF8C00",
+        "editorGutter.modifiedBackground": "#D7BA7D",
+        "editorGutter.addedBackground": "#4EC9B0",
+        "editorUnnecessary.foreground": "#7F848E"
+    },
+    "problems.decorations.enabled": true,
+    "editor.renderWhitespace": "none",
+    "editor.renderControlCharacters": true,
     "workbench.list.smoothScrolling": true,
     "editor.smoothScrolling": true,
     "terminal.integrated.smoothScrolling": true,
@@ -143,7 +212,6 @@
     "chat.editor.fontFamily": "Caskaydiacove Nerd Font Mono, 'Segoe UI', 'Inter', system-ui",
     "markdown.preview.fontFamily": "Caskaydiacove Nerd Font Mono, 'Segoe UI', 'Inter', system-ui",
     "window.commandCenter": false,
-    "editor.renderWhitespace": "none",
     "editor.cursorStyle": "line-thin",
     "editor.cursorBlinking": "smooth",
     "terminal.integrated.cursorBlinking": true,
