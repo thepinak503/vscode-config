@@ -1,61 +1,35 @@
 @echo off
-setlocal EnableDelayedExpansion
+setlocal
 
-:: ------------------------------
-:: Universal VS Code Settings Updater
-:: Author: Pinak
-:: ------------------------------
-
-:: Base path for VS Code settings
-set "BASE=%userprofile%\AppData\Roaming"
-
-:: Possible VS Code directories
-set "VERSIONS=Code Code - Insiders Code - OSS VSCodium"
-
-:: Remote settings file URL
+:: Simple VS Code Settings Updater
+set "VSCODE_DIR=%AppData%\Code\User"
+set "SETTINGS=%VSCODE_DIR%\settings.json"
+set "BACKUP=%VSCODE_DIR%\settings.json.bak"
 set "URL=https://raw.githubusercontent.com/thepinak503/vscode-config/refs/heads/main/settings.json"
 
-echo.
-echo 🔍 Searching for installed VS Code variants...
-echo.
-
-set "found=false"
-
-for %%V in (%VERSIONS%) do (
-    set "VSCODE_DIR=%BASE%\%%V\User"
-    set "SETTINGS=%VSCODE_DIR%\settings.json"
-    set "BACKUP=%VSCODE_DIR%\settings.json.bak"
-
-    if exist "!VSCODE_DIR!" (
-        echo ✅ Found: %%V
-        set "found=true"
-
-        if exist "!SETTINGS!" (
-            echo   Backing up existing settings.json...
-            copy /Y "!SETTINGS!" "!BACKUP!" >nul
-            del "!SETTINGS!"
-        ) else (
-            echo   No settings.json found, skipping backup.
-        )
-
-        echo   Downloading new settings.json...
-        curl -fsSL "%URL%" -o "!SETTINGS!"
-
-        if !errorlevel! neq 0 (
-            echo   ❌ Error downloading for %%V.
-        ) else (
-            echo   ✅ Updated successfully for %%V.
-        )
-
-        echo.
-    )
+echo [SCAN] Checking for VS Code...
+if not exist "%VSCODE_DIR%" (
+    echo [WARN] VS Code not found.
+    pause
+    exit /b
 )
 
-if "%found%"=="false" (
-    echo ⚠️ No VS Code variants found under "%BASE%".
+echo [FOUND] VS Code settings folder.
+
+if exist "%SETTINGS%" (
+    echo Backing up existing settings.json...
+    copy /Y "%SETTINGS%" "%BACKUP%" >nul
 )
 
-echo.
-echo 🏁 All done!
+echo Downloading new settings.json...
+curl -fsSL "%URL%" -o "%SETTINGS%"
+
+if %errorlevel% neq 0 (
+    echo [ERR] Failed to download settings.
+) else (
+    echo [OK] Updated successfully!
+)
+
+echo [DONE]
 pause
 endlocal
