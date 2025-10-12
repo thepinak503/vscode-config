@@ -57,7 +57,6 @@
             ]
         }
     },
-    // Window Settings
     "window": {
         "newWindowDimensions": "inherit",
         "nativeFullScreen": true,
@@ -65,7 +64,6 @@
         "closeWhenEmpty": false,
         "restoreWindows": "all"
     },
-    // File Settings
     "files": {
         "trimTrailingWhitespace": true,
         "insertFinalNewline": true,
@@ -88,7 +86,6 @@
             ".phpunit.result.cache": true
         }
     },
-    // Search Settings
     "search": {
         "useIgnoreFiles": false,
         "exclude": {
@@ -111,7 +108,6 @@
     "workbench.tree.indent": 15,
     "workbench.editor.limit.value": 20,
     "workbench.startupEditor": "newUntitledFile",
-    // Visual / UX improvements
     "workbench.colorTheme": "Default High Contrast",
     "workbench.iconTheme": "vs-seti",
     "window.zoomLevel": 0,
@@ -129,7 +125,6 @@
     "explorer.compactFolders": false,
     "explorer.decorations.badges": true,
     "breadcrumbs.enabled": true,
-    // Rigorous syntax highlighting and diagnostics
     "editor.semanticHighlighting.enabled": true,
     "editor.semanticTokenColorCustomizations": {
         "enabled": true,
