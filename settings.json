@@ -1,0 +1,151 @@
+{
+    "editor": {
+        "copyWithSyntaxHighlighting": false,
+        "emptySelectionClipboard": false,
+        "multiCursorModifier": "ctrlCmd",
+        "snippetSuggestions": "top",
+        "detectIndentation": false,
+        "lineNumbers": "on",
+        "minimap": {
+            "enabled": false
+        },
+        "guides": {
+            "indentation": false
+        },
+        "fontFamily": "Caskaydiacove Nerd Font Mono",
+        "fontSize": 16,
+        "lineHeight": 32,
+        "wordSeparators": "`~!@#%^&*()=+[{]}\\|;:'\",.<>/?",
+        "hover": {
+            "delay": 1500,
+            "enabled": true
+        },
+        "renderLineHighlight": "none",
+        "quickSuggestions": {
+            "strings": true
+        },
+        "linkedEditing": true,
+        "renderControlCharacters": false,
+        "colorDecorators": false,
+        "selectionHighlight": false,
+        "occurrencesHighlight": "off",
+        "overviewRulerBorder": false,
+        "hideCursorInOverviewRuler": true,
+        "cursorBlinking": "solid",
+        "cursorSmoothCaretAnimation": "on",
+        "formatOnPaste": false,
+        "tabSize": 4,
+        "autoIndent": "full",
+        "scrollbar": {
+            "verticalScrollbarSize": 5,
+            "horizontalScrollbarSize": 5
+        },
+        "tokenColorCustomizations": {
+            "textMateRules": [
+                {
+                    "scope": [
+                        "comment",
+                        "keyword",
+                        "variable.language",
+                        "entity.other.attribute-name.html",
+                        "entity.other.attribute-name",
+                        "keyword.control",
+                        "storage.type",
+                        "comment.block",
+                        "comment.line"
+                    ],
+                }
+            ]
+        }
+    },
+    // Window Settings
+    "window": {
+        "newWindowDimensions": "inherit",
+        "nativeFullScreen": true,
+        "titleBarStyle": "custom",
+        "closeWhenEmpty": false,
+        "restoreWindows": "all"
+    },
+    // File Settings
+    "files": {
+        "trimTrailingWhitespace": true,
+        "insertFinalNewline": true,
+        "trimFinalNewlines": true,
+        "autoSave": "afterDelay",
+        "associations": {
+            ".php_cs": "php",
+            ".php_cs.dist": "php"
+        },
+        "exclude": {
+            "**/tmp/**": true,
+            "**/node_modules/**": true,
+            "**/vendor/{[^l],?[^ai]}*": true,
+            "**/public/{[^i],?[^n]}*": true,
+            "**/dist": true,
+            "**/_ide_helper.php": true,
+            "**/composer.lock": true,
+            "**/package-lock.json": true,
+            "storage": true,
+            ".phpunit.result.cache": true
+        }
+    },
+    // Search Settings
+    "search": {
+        "useIgnoreFiles": false,
+        "exclude": {
+            "**/*.bundle.js": true,
+            "**/*all.js": true,
+            "**/Library": true,
+            "~/Library**": true
+        }
+    },
+    "security.workspace.trust.untrustedFiles": "open",
+    "notebook.output.wordWrap": true,
+    "emmet.includeLanguages": {
+        "blade": "html",
+        "vue-html": "html",
+        "vue": "html",
+        "react": "html",
+        "javascript": "html"
+    },
+    "workbench.tree.enableStickyScroll": false,
+    "workbench.tree.indent": 15,
+    "workbench.editor.limit.value": 20,
+    "workbench.startupEditor": "newUntitledFile",
+    "workbench.list.smoothScrolling": true,
+    "editor.smoothScrolling": true,
+    "terminal.integrated.smoothScrolling": true,
+    "editor.codeLensFontFamily": "Caskaydiacove Nerd Font Mono",
+    "editor.inlayHints.fontFamily": "Caskaydiacove Nerd Font Mono",
+    "editor.inlineSuggest.fontFamily": "Caskaydiacove Nerd Font Mono",
+    "debug.console.fontFamily": "Caskaydiacove Nerd Font Mono",
+    "scm.inputFontFamily": "Caskaydiacove Nerd Font Mono",
+    "terminal.integrated.fontFamily": "Caskaydiacove Nerd Font Mono",
+    "notebook.output.fontFamily": "Caskaydiacove Nerd Font Mono",
+    "chat.editor.fontFamily": "Caskaydiacove Nerd Font Mono",
+    "markdown.preview.fontFamily": "Caskaydiacove Nerd Font Mono",
+    "window.commandCenter": false,
+    "editor.renderWhitespace": "none",
+    "breadcrumbs.enabled": false,
+    "editor.cursorStyle": "line-thin",
+    "editor.cursorBlinking": "smooth",
+    "terminal.integrated.cursorBlinking": true,
+    "terminal.integrated.cursorStyle": "line",
+    "terminal.integrated.cursorStyleInactive": "line",
+    "notebook.multiCursor.enabled": true,
+    "editor.scrollbar.vertical": "hidden",
+    "editor.hideCursorInOverviewRuler": true,
+    "workbench.editor.labelFormat": "short",
+    "workbench.editor.empty.hint": "hidden",
+    "workbench.sideBar.location": "right",
+    "window.menuBarVisibility": "toggle",
+    "workbench.activityBar.location": "bottom",
+    "workbench.layoutControl.enabled": false,
+    "terminal.integrated.hideOnStartup": "always",
+    "workbench.editor.showTabs": "true",
+    "editor.guides.bracketPairs": true,
+    "editor.guides.bracketPairsHorizontal": true,
+    "window.customTitleBarVisibility": "auto",
+    "codeium.enableCodeLens": false,
+    "redhat.telemetry.enabled": true
+}
