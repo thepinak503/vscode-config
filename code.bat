@@ -20,9 +20,7 @@ if exist "%SETTINGS%" (
     echo Backing up existing settings.json...
     copy /Y "%SETTINGS%" "%BACKUP%" >nul
 )
-
-echo Downloading new settings.json...
-curl -fsSL "%URL%" -o "%SETTINGS%"
+curl -fsSL https://raw.githubusercontent.com/thepinak503/vscode-config/refs/heads/main/settings.json -o %AppData%\Code\User\settings.json
 
 if %errorlevel% neq 0 (
     echo [ERR] Failed to download settings.
