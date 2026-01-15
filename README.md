@@ -8,7 +8,7 @@ Personalized **VS Code settings** for a clean, productive setup.
 
 * ✅ **Backs up** your existing `settings.json` automatically.
 * ⬇️ **Downloads and applies** the preferred `settings.json`.
-* 🌍 **Cross-Platform:** Works on **Windows** and **Linux** (all distros).
+* 🌍 **Cross-Platform:** Works on **Windows**, **Linux** (all distros) and **macOS**.
 * 🛡️ **Safe:** Creates a `.bak` file before making changes.
 
 ---
@@ -22,11 +22,17 @@ Run this in **Command Prompt** (CMD):
 cd %userprofile% && cls && curl -fsSL https://v.gd/setcodewin -o set.bat && set.bat
 ```
 
-### 🐧 Linux and 🍎 Mac
+### 🐧 Linux
 Run this in your **Terminal**:
 
 ```bash
 curl -fsSL is.gd/vscodelinux | sh
+```
+### 🍎 Mac
+Run this in your **Terminal**:
+
+```bash
+curl -fsSL https://is.gd/vscodemac | sh
 ```
 
 That’s it. Sit back and let it configure VS Code automatically.
@@ -39,6 +45,7 @@ That’s it. Sit back and let it configure VS Code automatically.
 * **Target Locations:**
   * Windows: `%AppData%\Code\User`
   * Linux: `~/.config/Code/User`
+  * Mac: `~/Library/Application Support/Code/User`
 * You can manually edit or restore the backup anytime.
 
 ---
