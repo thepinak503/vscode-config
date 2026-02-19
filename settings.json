@@ -237,5 +237,7 @@
     "workbench.editor.alwaysShowEditorActions": true,
     "workbench.editor.defaultBinaryEditor": "default",
     "window.menuBarVisibility": "toggle",
-    "window.menuStyle": "native"
+    "window.menuStyle": "native",
+    "window.autoDetectColorScheme": true,
+    "workbench.preferredLightColorTheme": "Monokai Dimmed"
 }
