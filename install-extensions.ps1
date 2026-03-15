@@ -1,5 +1,6 @@
-# VS Code Extensions Installation Script for Windows
-# Run: Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass; .\install-extensions.ps1
+param(
+    [string]$CodeCommand = "code"
+)
 
 $ErrorActionPreference = "Stop"
 
@@ -162,14 +163,15 @@ $extensions = @(
     "wmaurer.change-case"
 )
 
-# Check if VS Code is installed
-if (-not (Get-Command code -ErrorAction SilentlyContinue)) {
-    Write-Host "❌ Error: VS Code 'code' command not found." -ForegroundColor Red
-    Write-Host "   Make sure VS Code is installed and in your PATH." -ForegroundColor Yellow
+if (-not (Get-Command $CodeCommand -ErrorAction SilentlyContinue)) {
+    Write-Host "Error: VS Code '$CodeCommand' command not found." -ForegroundColor Red
+    Write-Host "Make sure VS Code is installed and in your PATH." -ForegroundColor Yellow
     exit 1
 }
 
-Write-Host "`n🚀 Installing VS Code Extensions..." -ForegroundColor Cyan
+Write-Host ""
+Write-Host "Installing VS Code Extensions..." -ForegroundColor Cyan
+Write-Host "Using: $CodeCommand" -ForegroundColor Gray
 Write-Host "=====================================" -ForegroundColor Cyan
 Write-Host ""
 
@@ -179,26 +181,24 @@ $failed = 0
 $total = $extensions.Count
 $current = 0
 
-# Get currently installed extensions
-$installedExtensions = code --list-extensions 2>$null
+$installedExtensions = & $CodeCommand --list-extensions 2>$null
 
 foreach ($ext in $extensions) {
     $current++
     $percent = [math]::Round(($current / $total) * 100)
 
     if ($installedExtensions -contains $ext) {
-        Write-Host "⏭️  $ext (already installed)" -ForegroundColor Gray
+        Write-Host "SKIP $ext (already installed)" -ForegroundColor Gray
         $skipped++
     } else {
         Write-Progress -Activity "Installing Extensions" -Status "$ext ($current of $total)" -PercentComplete $percent
-        $err = $null
-        code --install-extension $ext --force 2>&1 | Out-Null
+        & $CodeCommand --install-extension $ext --force 2>&1 | Out-Null
 
         if ($LASTEXITCODE -eq 0) {
-            Write-Host "✅ $ext" -ForegroundColor Green
+            Write-Host "OK $ext" -ForegroundColor Green
             $installed++
         } else {
-            Write-Host "❌ $ext" -ForegroundColor Red
+            Write-Host "FAIL $ext" -ForegroundColor Red
             $failed++
         }
     }
@@ -208,23 +208,23 @@ Write-Progress -Activity "Installing Extensions" -Completed
 
 Write-Host ""
 Write-Host "=====================================" -ForegroundColor Cyan
-Write-Host "📊 Summary:" -ForegroundColor Cyan
-Write-Host "   ✅ Installed: $installed" -ForegroundColor Green
-Write-Host "   ⏭️  Skipped:   $skipped" -ForegroundColor Gray
-Write-Host "   ❌ Failed:    $failed" -ForegroundColor $(if ($failed -gt 0) { "Red" } else { "Green" })
+Write-Host "Summary:" -ForegroundColor Cyan
+Write-Host "  Installed: $installed" -ForegroundColor Green
+Write-Host "  Skipped:   $skipped" -ForegroundColor Gray
+Write-Host "  Failed:    $failed" -ForegroundColor $(if ($failed -gt 0) { "Red" } else { "Green" })
 Write-Host ""
 
 if ($failed -eq 0) {
-    Write-Host "✅ All extensions installed successfully!" -ForegroundColor Green
+    Write-Host "All extensions installed successfully!" -ForegroundColor Green
 } else {
-    Write-Host "⚠️  $failed extension(s) failed to install." -ForegroundColor Yellow
+    Write-Host "$failed extension(s) failed to install." -ForegroundColor Yellow
 }
 
 Write-Host ""
-Write-Host "📝 Note: Some extensions require additional setup:" -ForegroundColor Yellow
-Write-Host "   - GitHub Copilot: Sign in with GitHub account"
-Write-Host "   - Remote SSH: Configure SSH hosts"
-Write-Host "   - Python: Select Python interpreter"
-Write-Host "   - Go/Rust: Install language toolchains"
+Write-Host "Note: Some extensions require additional setup:" -ForegroundColor Yellow
+Write-Host "  - GitHub Copilot: Sign in with GitHub account"
+Write-Host "  - Remote SSH: Configure SSH hosts"
+Write-Host "  - Python: Select Python interpreter"
+Write-Host "  - Go/Rust: Install language toolchains"
 Write-Host ""
-Write-Host "🔄 Restart VS Code to activate all extensions." -ForegroundColor Cyan
+Write-Host "Restart VS Code to activate all extensions." -ForegroundColor Cyan
