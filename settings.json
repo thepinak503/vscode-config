@@ -1,50 +1,35 @@
 {
-    // ═══════════════════════════════════════════════════════════════════════════
-    // 🔤 FONTS - Nerd Fonts + Platform Fallbacks
-    // ═══════════════════════════════════════════════════════════════════════════
-    // Primary editor font with extensive Nerd Font + platform fallbacks
     "editor.fontFamily": "'CaskaydiaCove Nerd Font', 'JetBrainsMono Nerd Font', 'FiraCode Nerd Font', 'Hack Nerd Font', 'Iosevka Nerd Font', 'VictorMono Nerd Font', 'SourceCodePro Nerd Font', 'UbuntuMono Nerd Font', 'RobotoMono Nerd Font', 'MesloLGS Nerd Font', 'DejaVuSansMono Nerd Font', 'InconsolataGo Nerd Font', 'Monaspace Neon', 'Monaspace Argon', 'Monaspace Xenon', 'Geist Mono', 'Intel One Mono', 'JetBrains Mono', 'Fira Code', 'Cascadia Code', 'Source Code Pro', 'Hack', 'Iosevka', 'Victor Mono', 'SF Mono', 'Menlo', 'Monaco', 'Consolas', 'Segoe UI Mono', 'Ubuntu Mono', 'DejaVu Sans Mono', 'Liberation Mono', 'Droid Sans Mono', 'Courier New', monospace",
     "editor.fontSize": 15,
     "editor.lineHeight": 1.8,
     "editor.fontLigatures": "'calt', 'liga', 'dlig', 'ss01', 'ss02', 'ss03', 'ss04', 'ss05', 'ss06', 'ss07', 'ss08', 'cv01', 'cv02', 'cv14', 'cv18'",
     "editor.fontWeight": "400",
     "editor.fontVariations": true,
-    // Terminal fonts
     "terminal.integrated.fontFamily": "'CaskaydiaCove Nerd Font Mono', 'JetBrainsMono Nerd Font Mono', 'FiraCode Nerd Font Mono', 'Hack Nerd Font Mono', 'MesloLGS Nerd Font', 'Iosevka Nerd Font Mono', 'UbuntuMono Nerd Font', 'RobotoMono Nerd Font', 'Monaspace Neon', 'Geist Mono', 'JetBrains Mono', 'Fira Code', 'Cascadia Code PL', 'SF Mono', 'Menlo', 'Monaco', 'Consolas', 'Ubuntu Mono', 'DejaVu Sans Mono', 'Liberation Mono', 'Courier New', monospace",
     "terminal.integrated.fontSize": 14,
     "terminal.integrated.fontWeight": "normal",
     "terminal.integrated.fontWeightBold": "bold",
     "terminal.integrated.lineHeight": 1.4,
     "terminal.integrated.letterSpacing": 0,
-    // Debug console font
     "debug.console.fontFamily": "'CaskaydiaCove Nerd Font Mono', 'JetBrainsMono Nerd Font Mono', 'FiraCode Nerd Font Mono', 'Hack Nerd Font Mono', 'MesloLGS Nerd Font', 'Monaspace Neon', 'Geist Mono', 'JetBrains Mono', 'Fira Code', 'Cascadia Code', 'SF Mono', 'Menlo', 'Consolas', 'Ubuntu Mono', 'DejaVu Sans Mono', 'Courier New', monospace",
     "debug.console.fontSize": 14,
     "debug.console.lineHeight": 1.4,
-    // Code lens font
-    "editor.codeLensFontFamily": "'CaskaydiaCove Nerd Font', 'JetBrainsMono Nerd Font', 'FiraCode Nerd Font', 'Iosevka Nerd Font', 'Monaspace Argon', 'Geist Mono', 'JetBrains Mono', 'Fira Code', 'Cascadia Code', 'SF Mono', 'Menlo', 'Consolas', 'Ubuntu Mono', 'monospace",
+    "editor.codeLensFontFamily": "'CaskaydiaCove Nerd Font', 'JetBrainsMono Nerd Font', 'FiraCode Nerd Font', 'Iosevka Nerd Font', 'Monaspace Argon', 'Geist Mono', 'JetBrains Mono', 'Fira Code', 'Cascadia Code', 'SF Mono', 'Menlo', 'Consolas', 'Ubuntu Mono', monospace",
     "editor.codeLensFontSize": 12,
-    // Inlay hints font
-    "editor.inlayHints.fontFamily": "'CaskaydiaCove Nerd Font', 'JetBrainsMono Nerd Font', 'Iosevka Nerd Font', 'VictorMono Nerd Font', 'Monaspace Radon', 'Geist Mono', 'JetBrains Mono', 'Fira Code', 'Cascadia Code', 'SF Mono', 'Menlo', 'Consolas', 'monospace",
+    "editor.inlayHints.fontFamily": "'CaskaydiaCove Nerd Font', 'JetBrainsMono Nerd Font', 'Iosevka Nerd Font', 'VictorMono Nerd Font', 'Monaspace Radon', 'Geist Mono', 'JetBrains Mono', 'Fira Code', 'Cascadia Code', 'SF Mono', 'Menlo', 'Consolas', monospace",
     "editor.inlayHints.fontSize": 12,
     "editor.inlayHints.padding": true,
-    // Inline suggest font
-    "editor.inlineSuggest.fontFamily": "'CaskaydiaCove Nerd Font', 'JetBrainsMono Nerd Font', 'FiraCode Nerd Font', 'Monaspace Krypton', 'Geist Mono', 'JetBrains Mono', 'Fira Code', 'Cascadia Code', 'SF Mono', 'Menlo', 'Consolas', 'monospace",
-    // SCM input font
+    "editor.inlineSuggest.fontFamily": "'CaskaydiaCove Nerd Font', 'JetBrainsMono Nerd Font', 'FiraCode Nerd Font', 'Monaspace Krypton', 'Geist Mono', 'JetBrains Mono', 'Fira Code', 'Cascadia Code', 'SF Mono', 'Menlo', 'Consolas', monospace",
     "scm.inputFontFamily": "'CaskaydiaCove Nerd Font', 'JetBrainsMono Nerd Font', 'FiraCode Nerd Font', 'Hack Nerd Font', 'Geist Mono', 'JetBrains Mono', 'Fira Code', 'Cascadia Code', 'SF Mono', 'Menlo', 'Consolas', 'Ubuntu Mono', monospace",
     "scm.inputFontSize": 13,
-    // Notebook output font
-    "notebook.output.fontFamily": "'CaskaydiaCove Nerd Font', 'JetBrainsMono Nerd Font', 'FiraCode Nerd Font', 'Iosevka Nerd Font', 'Monaspace Neon', 'Geist Mono', 'JetBrains Mono', 'Fira Code', 'SF Mono', 'Menlo', 'Consolas', 'monospace",
+    "notebook.output.fontFamily": "'CaskaydiaCove Nerd Font', 'JetBrainsMono Nerd Font', 'FiraCode Nerd Font', 'Iosevka Nerd Font', 'Monaspace Neon', 'Geist Mono', 'JetBrains Mono', 'Fira Code', 'SF Mono', 'Menlo', 'Consolas', monospace",
     "notebook.output.fontSize": 13,
     "notebook.output.lineHeight": 1.4,
-    // Chat & Markdown fonts
     "chat.editor.fontFamily": "'CaskaydiaCove Nerd Font', 'JetBrainsMono Nerd Font', 'Inter', 'Segoe UI', 'SF Pro Display', 'Ubuntu', 'Roboto', 'Helvetica Neue', 'Arial', system-ui, sans-serif",
     "chat.editor.fontSize": 14,
     "markdown.preview.fontFamily": "'Inter', 'Segoe UI', 'SF Pro Display', 'Ubuntu', 'Roboto', 'Helvetica Neue', 'Arial', -apple-system, BlinkMacSystemFont, system-ui, sans-serif",
     "markdown.preview.fontSize": 15,
     "markdown.preview.lineHeight": 1.7,
-    // ═══════════════════════════════════════════════════════════════════════════
-    // ⚡ EDITOR - Core Settings
-    // ═══════════════════════════════════════════════════════════════════════════
     "editor.tabSize": 4,
     "editor.insertSpaces": true,
     "editor.detectIndentation": true,
@@ -82,9 +67,6 @@
     "editor.unicodeHighlight.ambiguousCharacters": true,
     "editor.unicodeHighlight.invisibleCharacters": true,
     "editor.unicodeHighlight.nonBasicASCII": "inUntrustedWorkspace",
-    // ═══════════════════════════════════════════════════════════════════════════
-    // 🎯 CURSOR & SELECTION
-    // ═══════════════════════════════════════════════════════════════════════════
     "editor.cursorStyle": "line",
     "editor.cursorWidth": 2,
     "editor.cursorBlinking": "smooth",
@@ -101,17 +83,12 @@
     "editor.find.globalFindClipboard": true,
     "editor.find.loop": true,
     "editor.find.seedSearchStringFromSelection": "selection",
-    // ═══════════════════════════════════════════════════════════════════════════
-    // 📜 SCROLLING & MINIMAP
-    // ═══════════════════════════════════════════════════════════════════════════
     "editor.smoothScrolling": true,
     "editor.fastScrollSensitivity": 5,
     "editor.mouseWheelScrollSensitivity": 1.5,
     "editor.scrollBeyondLastLine": true,
     "editor.scrollBeyondLastColumn": 5,
     "editor.scrollPredominantAxis": true,
-    "editor.inertialScroll": true,
-    "editor.scrollOnMiddleClick": true,
     "editor.stickyScroll.enabled": true,
     "editor.stickyScroll.maxLineCount": 5,
     "editor.stickyScroll.defaultModel": "outlineModel",
@@ -132,9 +109,6 @@
     "editor.minimap.showMarkSectionHeaders": true,
     "editor.overviewRulerBorder": false,
     "editor.hideCursorInOverviewRuler": false,
-    // ═══════════════════════════════════════════════════════════════════════════
-    // 🧠 INTELLISENSE & SUGGESTIONS
-    // ═══════════════════════════════════════════════════════════════════════════
     "editor.quickSuggestions": {
         "other": "on",
         "comments": "off",
@@ -189,18 +163,10 @@
     "editor.parameterHints.enabled": true,
     "editor.parameterHints.cycle": true,
     "editor.tabCompletion": "on",
-    // ═══════════════════════════════════════════════════════════════════════════
-    // 🤖 AI & INLINE SUGGESTIONS
-    // ═══════════════════════════════════════════════════════════════════════════
     "editor.inlineSuggest.enabled": true,
     "editor.inlineSuggest.showToolbar": "onHover",
     "editor.inlineSuggest.suppressSuggestions": false,
-    "editor.inlineSuggest.syntaxHighlightingEnabled": true,
     "editor.inlayHints.enabled": "onUnlessPressed",
-    "editor.aiStats.enabled": true,
-    // ═══════════════════════════════════════════════════════════════════════════
-    // 💾 FORMATTING & SAVING
-    // ═══════════════════════════════════════════════════════════════════════════
     "editor.formatOnSave": true,
     "editor.formatOnSaveMode": "file",
     "editor.formatOnPaste": true,
@@ -213,9 +179,6 @@
         "source.sortImports": "explicit",
         "source.removeUnusedImports": "explicit"
     },
-    // ═══════════════════════════════════════════════════════════════════════════
-    // 🎨 BRACKETS & GUIDES
-    // ═══════════════════════════════════════════════════════════════════════════
     "editor.bracketPairColorization.enabled": true,
     "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
     "editor.guides.bracketPairs": "active",
@@ -230,13 +193,10 @@
     "editor.autoClosingOvertype": "auto",
     "editor.autoClosingQuotes": "languageDefined",
     "editor.autoSurround": "languageDefined",
-    // ═══════════════════════════════════════════════════════════════════════════
-    // 🔗 LINKS & DEFINITIONS
-    // ═══════════════════════════════════════════════════════════════════════════
     "editor.links": true,
     "editor.linkedEditing": true,
     "editor.colorDecorators": true,
-    "editor.colorDecoratorsActivatedOn": "clickAndHover",
+    "editor.colorDecoratorsActivatedOn": "hover",
     "editor.colorDecoratorsLimit": 500,
     "editor.definitionLinkOpensInPeek": false,
     "editor.gotoLocation.multipleDeclarations": "peek",
@@ -249,9 +209,6 @@
     "editor.gotoLocation.alternativeImplementationCommand": "",
     "editor.gotoLocation.alternativeReferenceCommand": "",
     "editor.gotoLocation.alternativeTypeDefinitionCommand": "editor.action.goToReferences",
-    // ═══════════════════════════════════════════════════════════════════════════
-    // 💡 HOVER & CODE LENS
-    // ═══════════════════════════════════════════════════════════════════════════
     "editor.hover.enabled": "on",
     "editor.hover.delay": 300,
     "editor.hover.sticky": true,
@@ -260,9 +217,6 @@
     "editor.codeLens": true,
     "editor.lightbulb.enabled": "on",
     "editor.stablePeek": true,
-    // ═══════════════════════════════════════════════════════════════════════════
-    // 📂 FILES & ENCODING
-    // ═══════════════════════════════════════════════════════════════════════════
     "files.autoSave": "onFocusChange",
     "files.autoSaveDelay": 1000,
     "files.autoSaveWhenNoErrors": false,
@@ -335,9 +289,6 @@
         "**/tmp/**": true,
         "**/temp/**": true
     },
-    // ═══════════════════════════════════════════════════════════════════════════
-    // 🔍 SEARCH
-    // ═══════════════════════════════════════════════════════════════════════════
     "search.useIgnoreFiles": true,
     "search.useGlobalIgnoreFiles": true,
     "search.useParentIgnoreFiles": true,
@@ -384,9 +335,6 @@
         "**/venv": true,
         "**/.venv": true
     },
-    // ═══════════════════════════════════════════════════════════════════════════
-    // 🗂️ EXPLORER
-    // ═══════════════════════════════════════════════════════════════════════════
     "explorer.compactFolders": false,
     "explorer.confirmDelete": false,
     "explorer.confirmDragAndDrop": false,
@@ -427,9 +375,6 @@
         "readme.md": "readme*, README*, CHANGELOG*, changelog*, LICENSE*, license*, CONTRIBUTING*, contributing*",
         "README.md": "readme*, README*, CHANGELOG*, changelog*, LICENSE*, license*, CONTRIBUTING*, contributing*"
     },
-    // ═══════════════════════════════════════════════════════════════════════════
-    // 🖥️ TERMINAL
-    // ═══════════════════════════════════════════════════════════════════════════
     "terminal.integrated.smoothScrolling": true,
     "terminal.integrated.cursorBlinking": true,
     "terminal.integrated.cursorStyle": "line",
@@ -459,22 +404,17 @@
     "terminal.integrated.drawBoldTextInBrightColors": true,
     "terminal.integrated.enableFileLinks": "on",
     "terminal.integrated.environmentChangesIndicator": "warnonly",
-    "terminal.integrated.experimentalImageSupport": true,
     "terminal.integrated.defaultProfile.linux": "fish",
     "terminal.integrated.defaultProfile.osx": "fish",
     "terminal.integrated.defaultProfile.windows": "PowerShell",
     "terminal.integrated.env.linux": {},
     "terminal.integrated.env.osx": {},
     "terminal.integrated.env.windows": {},
-    // ═══════════════════════════════════════════════════════════════════════════
-    // 🪟 WINDOW
-    // ═══════════════════════════════════════════════════════════════════════════
     "window.title": "${dirty}${activeEditorShort}${separator}${rootName}${separator}${profileName}${separator}${appName}",
     "window.titleBarStyle": "custom",
     "window.customTitleBarVisibility": "auto",
     "window.menuBarVisibility": "toggle",
-    "window.menuStyle": "native",
-    "window.commandCenter": false,
+    "window.commandCenter": true,
     "window.zoomLevel": 0,
     "window.zoomPerWindow": true,
     "window.newWindowDimensions": "inherit",
@@ -493,23 +433,20 @@
     "window.density.editorTabHeight": "default",
     "window.nativeTabs": false,
     "window.confirmBeforeClose": "keyboardOnly",
-    // ═══════════════════════════════════════════════════════════════════════════
-    // 🎨 WORKBENCH
-    // ═══════════════════════════════════════════════════════════════════════════
-    "workbench.colorTheme": "One Dark Pro Darker",
-    "workbench.preferredDarkColorTheme": "One Dark Pro Darker",
-    "workbench.preferredLightColorTheme": "GitHub Light Default",
+    "workbench.colorTheme": "One Dark Darker",
+    "workbench.preferredDarkColorTheme": "One Dark Darker",
+    "workbench.preferredLightColorTheme": "Light - Android Studio",
     "workbench.preferredHighContrastColorTheme": "Default High Contrast",
     "workbench.preferredHighContrastLightColorTheme": "Default High Contrast Light",
     "workbench.iconTheme": "material-icon-theme",
     "workbench.productIconTheme": "fluent-icons",
     "workbench.startupEditor": "none",
     "workbench.sideBar.location": "left",
-    "workbench.activityBar.location": "hidden",
+    "workbench.activityBar.location": "default",
     "workbench.statusBar.visible": true,
     "workbench.panel.defaultLocation": "bottom",
     "workbench.panel.opensMaximized": "preserve",
-    "workbench.layoutControl.enabled": false,
+    "workbench.layoutControl.enabled": true,
     "workbench.layoutControl.type": "both",
     "workbench.tips.enabled": false,
     "workbench.welcomePage.walkthroughs.openOnInstall": false,
@@ -538,9 +475,6 @@
     "workbench.quickOpen.preserveInput": false,
     "workbench.hover.delay": 300,
     "workbench.reduceMotion": "auto",
-    // ═══════════════════════════════════════════════════════════════════════════
-    // 📑 EDITOR TABS
-    // ═══════════════════════════════════════════════════════════════════════════
     "workbench.editor.showTabs": "multiple",
     "workbench.editor.tabSizing": "fit",
     "workbench.editor.tabSizingFixedMinWidth": 50,
@@ -578,9 +512,6 @@
     "workbench.editor.alwaysShowEditorActions": false,
     "workbench.editor.autoLockGroups": {},
     "workbench.editor.empty.hint": "text",
-    // ═══════════════════════════════════════════════════════════════════════════
-    // 🎨 SEMANTIC HIGHLIGHTING & COLORS
-    // ═══════════════════════════════════════════════════════════════════════════
     "editor.semanticHighlighting.enabled": true,
     "editor.semanticTokenColorCustomizations": {
         "enabled": true,
@@ -869,22 +800,21 @@
         "editorGutter.modifiedBackground": "#0C7D9D",
         "editorGutter.addedBackground": "#587C0C",
         "editorGutter.deletedBackground": "#94151B",
-        "editorUnnecessaryCode.opacity": "#000000AA",
         "editorIndentGuide.background1": "#404040",
         "editorIndentGuide.activeBackground1": "#707070",
         "editorWhitespace.foreground": "#3B3B3B",
         "scrollbarSlider.background": "#79797966",
-        "scrollbarSlider.hoverBackground": "#646464B3",
-        "scrollbarSlider.activeBackground": "#BFBFBF66",
-        "minimap.selectionHighlight": "#264F78CC",
-        "minimap.findMatchHighlight": "#D18616",
+        "scrollbarSlider.hoverBackground": "#4dcc7bb3",
+        "scrollbarSlider.activeBackground": "#08ef2bbc",
+        "minimap.selectionHighlight": "#264F7899",
+        "editorUnnecessaryCode.opacity": "#00000077",
         "minimap.errorHighlight": "#F44747",
         "minimap.warningHighlight": "#FF8800",
         "tab.activeBorderTop": "#007ACC",
         "tab.activeModifiedBorder": "#3399CC",
         "tab.unfocusedActiveModifiedBorder": "#3399CCAA",
         "sideBar.dropBackground": "#383B3D",
-        "sideBarSectionHeader.background": "#0000",
+        "sideBarSectionHeader.background": "#00000000",
         "sideBarSectionHeader.border": "#CCCCCC33",
         "list.activeSelectionIconForeground": "#FFFFFF",
         "list.dropBackground": "#383B3D",
@@ -892,7 +822,7 @@
         "list.focusHighlightForeground": "#0097FB",
         "terminalCursor.foreground": "#FFCC00",
         "terminal.selectionBackground": "#264F78",
-        "terminal.findMatchBackground": "#515C6A",
+        "terminal.findMatchBackground": "#515C6A99",
         "terminal.findMatchHighlightBackground": "#EA5C0055",
         "statusBar.background": "#007ACC",
         "statusBar.noFolderBackground": "#68217A",
@@ -925,9 +855,6 @@
         "notificationsWarningIcon.foreground": "#FF8800",
         "notificationsInfoIcon.foreground": "#6796E6"
     },
-    // ═══════════════════════════════════════════════════════════════════════════
-    // 🔤 BREADCRUMBS
-    // ═══════════════════════════════════════════════════════════════════════════
     "breadcrumbs.enabled": true,
     "breadcrumbs.filePath": "on",
     "breadcrumbs.symbolPath": "on",
@@ -959,18 +886,12 @@
     "breadcrumbs.showStructs": true,
     "breadcrumbs.showTypeParameters": true,
     "breadcrumbs.showVariables": true,
-    // ═══════════════════════════════════════════════════════════════════════════
-    // ⚠️ PROBLEMS & DIAGNOSTICS
-    // ═══════════════════════════════════════════════════════════════════════════
     "problems.decorations.enabled": true,
     "problems.showCurrentInStatus": true,
     "problems.sortOrder": "severity",
     "problems.defaultViewMode": "tree",
     "problems.visibility": true,
     "problems.autoReveal": true,
-    // ═══════════════════════════════════════════════════════════════════════════
-    // 🔧 GIT & SOURCE CONTROL
-    // ═══════════════════════════════════════════════════════════════════════════
     "git.enabled": true,
     "git.path": null,
     "git.autofetch": true,
@@ -1017,7 +938,6 @@
     "git.ignoreRebaseWarning": false,
     "git.ignoreSubmodules": false,
     "git.ignoreWindowsGit27Warning": true,
-    "git.inputValidation": true,
     "git.inputValidationLength": 72,
     "git.inputValidationSubjectLength": 50,
     "git.mergeEditor": false,
@@ -1063,7 +983,6 @@
     "git.useForcePushWithLease": true,
     "git.useIntegratedAskPass": true,
     "git.verboseCommit": false,
-    // Source Control
     "scm.alwaysShowActions": false,
     "scm.alwaysShowRepositories": false,
     "scm.autoReveal": true,
@@ -1088,9 +1007,6 @@
     "scm.showChangesSummary": true,
     "scm.showHistoryGraph": true,
     "scm.showInputActionButton": true,
-    // ═══════════════════════════════════════════════════════════════════════════
-    // 🔀 DIFF EDITOR
-    // ═══════════════════════════════════════════════════════════════════════════
     "diffEditor.ignoreTrimWhitespace": false,
     "diffEditor.maxComputationTime": 5000,
     "diffEditor.maxFileSize": 50,
@@ -1107,9 +1023,6 @@
     "diffEditor.hideUnchangedRegions.revealLineCount": 20,
     "diffEditor.useInlineViewWhenSpaceIsLimited": true,
     "diffEditor.wordWrap": "inherit",
-    // ═══════════════════════════════════════════════════════════════════════════
-    // 🐛 DEBUG
-    // ═══════════════════════════════════════════════════════════════════════════
     "debug.allowBreakpointsEverywhere": false,
     "debug.autoExpandLazyVariables": "off",
     "debug.confirmOnExit": "never",
@@ -1150,15 +1063,12 @@
     "debug.showVariableTypes": false,
     "debug.terminal.clearBeforeReusing": false,
     "debug.toolBarLocation": "floating",
-    // ═══════════════════════════════════════════════════════════════════════════
-    // 📓 NOTEBOOK
-    // ═══════════════════════════════════════════════════════════════════════════
     "notebook.breadcrumbs.showCodeCells": true,
     "notebook.cellFocusIndicator": "gutter",
     "notebook.cellToolbarLocation": {
         "default": "right"
     },
-    "notebook.cellToolbarVisibility": "visible",
+    "notebook.cellToolbarVisibility": "hover",
     "notebook.codeActionsOnSave": {},
     "notebook.compactView": true,
     "notebook.confirmDeleteRunningCell": true,
@@ -1186,9 +1096,6 @@
     "notebook.stickyScroll.enabled": true,
     "notebook.undoRedoPerCell": true,
     "notebook.multiCursor.enabled": true,
-    // ═══════════════════════════════════════════════════════════════════════════
-    // 🔒 SECURITY
-    // ═══════════════════════════════════════════════════════════════════════════
     "security.workspace.trust.enabled": true,
     "security.workspace.trust.startupPrompt": "once",
     "security.workspace.trust.banner": "untilDismissed",
@@ -1196,9 +1103,6 @@
     "security.workspace.trust.untrustedFiles": "prompt",
     "security.allowedUNCHosts": [],
     "security.restrictUNCAccess": true,
-    // ═══════════════════════════════════════════════════════════════════════════
-    // 🧩 EXTENSIONS
-    // ═══════════════════════════════════════════════════════════════════════════
     "extensions.autoCheckUpdates": true,
     "extensions.autoUpdate": true,
     "extensions.closeExtensionDetailsOnViewChange": false,
@@ -1208,16 +1112,10 @@
     "extensions.supportVirtualWorkspaces": {},
     "extensions.webWorker": true,
     "extensions.experimental.affinity": {},
-    // ═══════════════════════════════════════════════════════════════════════════
-    // 📊 TELEMETRY
-    // ═══════════════════════════════════════════════════════════════════════════
     "telemetry.telemetryLevel": "off",
     "update.mode": "start",
     "update.showReleaseNotes": true,
     "update.enableWindowsBackgroundUpdates": true,
-    // ═══════════════════════════════════════════════════════════════════════════
-    // 📝 EMMET
-    // ═══════════════════════════════════════════════════════════════════════════
     "emmet.triggerExpansionOnTab": true,
     "emmet.showExpandedAbbreviation": "always",
     "emmet.showAbbreviationSuggestions": true,
@@ -1249,9 +1147,6 @@
     "emmet.excludeLanguages": [
         "markdown"
     ],
-    // ═══════════════════════════════════════════════════════════════════════════
-    // 🔤 LANGUAGE-SPECIFIC SETTINGS
-    // ═══════════════════════════════════════════════════════════════════════════
     "[json]": {
         "editor.defaultFormatter": "vscode.json-language-features",
         "editor.tabSize": 2,
@@ -1306,22 +1201,18 @@
         "editor.formatOnSave": true
     },
     "[vue]": {
-        "editor.defaultFormatter": "Vue.volar",
         "editor.tabSize": 2,
         "editor.formatOnSave": true
     },
     "[svelte]": {
-        "editor.defaultFormatter": "svelte.svelte-vscode",
         "editor.tabSize": 2,
         "editor.formatOnSave": true
     },
     "[astro]": {
-        "editor.defaultFormatter": "astro-build.astro-vscode",
         "editor.tabSize": 2,
         "editor.formatOnSave": true
     },
     "[python]": {
-        "editor.defaultFormatter": "ms-python.black-formatter",
         "editor.tabSize": 4,
         "editor.formatOnSave": true,
         "editor.codeActionsOnSave": {
@@ -1329,17 +1220,15 @@
         }
     },
     "[php]": {
-        "editor.defaultFormatter": "bmewburn.vscode-intelephense-client",
+        "editor.defaultFormatter": "vscode.php-language-features",
         "editor.tabSize": 4,
         "editor.formatOnSave": true
     },
     "[blade]": {
-        "editor.defaultFormatter": "shufo.vscode-blade-formatter",
         "editor.tabSize": 4,
         "editor.formatOnSave": true
     },
     "[go]": {
-        "editor.defaultFormatter": "golang.go",
         "editor.tabSize": 4,
         "editor.formatOnSave": true,
         "editor.codeActionsOnSave": {
@@ -1347,7 +1236,6 @@
         }
     },
     "[rust]": {
-        "editor.defaultFormatter": "rust-lang.rust-analyzer",
         "editor.tabSize": 4,
         "editor.formatOnSave": true
     },
@@ -1362,17 +1250,14 @@
         "editor.formatOnSave": true
     },
     "[csharp]": {
-        "editor.defaultFormatter": "ms-dotnettools.csharp",
         "editor.tabSize": 4,
         "editor.formatOnSave": true
     },
     "[java]": {
-        "editor.defaultFormatter": "redhat.java",
         "editor.tabSize": 4,
         "editor.formatOnSave": true
     },
     "[kotlin]": {
-        "editor.defaultFormatter": "mathiasfrohlich.Kotlin",
         "editor.tabSize": 4,
         "editor.formatOnSave": true
     },
@@ -1381,7 +1266,6 @@
         "editor.formatOnSave": true
     },
     "[ruby]": {
-        "editor.defaultFormatter": "Shopify.ruby-lsp",
         "editor.tabSize": 2,
         "editor.formatOnSave": true
     },
@@ -1390,7 +1274,6 @@
         "editor.formatOnSave": true
     },
     "[yaml]": {
-        "editor.defaultFormatter": "redhat.vscode-yaml",
         "editor.tabSize": 2,
         "editor.formatOnSave": true
     },
@@ -1403,7 +1286,7 @@
         "editor.formatOnSave": true
     },
     "[markdown]": {
-        "editor.defaultFormatter": "yzhang.markdown-all-in-one",
+        "editor.defaultFormatter": "vscode.markdown-language-features",
         "editor.wordWrap": "on",
         "editor.tabSize": 2,
         "editor.formatOnSave": false,
@@ -1419,12 +1302,10 @@
         "editor.formatOnSave": true
     },
     "[dockerfile]": {
-        "editor.defaultFormatter": "ms-azuretools.vscode-docker",
         "editor.tabSize": 2,
         "editor.formatOnSave": true
     },
     "[dockercompose]": {
-        "editor.defaultFormatter": "ms-azuretools.vscode-docker",
         "editor.tabSize": 2,
         "editor.formatOnSave": true
     },
@@ -1440,26 +1321,17 @@
         "editor.wordWrap": "on",
         "editor.formatOnSave": false
     },
-    // ═══════════════════════════════════════════════════════════════════════════
-    // 🧘 ZEN MODE
-    // ═══════════════════════════════════════════════════════════════════════════
     "zenMode.centerLayout": true,
     "zenMode.fullScreen": true,
     "zenMode.hideActivityBar": true,
     "zenMode.hideLineNumbers": false,
     "zenMode.hideStatusBar": false,
     "zenMode.restore": true,
-    "zenMode.showTabs": "single",
+    "zenMode.showTabs": "none",
     "zenMode.silentNotifications": true,
-    // ═══════════════════════════════════════════════════════════════════════════
-    // 🎤 CHAT & AI (GitHub Copilot, etc.)
-    // ═══════════════════════════════════════════════════════════════════════════
     "chat.agent.maxRequests": 100,
     "chat.editor.lineHeight": 22,
     "chat.editor.wordWrap": "on",
-    // ═══════════════════════════════════════════════════════════════════════════
-    // 📱 ACCESSIBILITY
-    // ═══════════════════════════════════════════════════════════════════════════
     "accessibility.signals.lineHasBreakpoint": {
         "sound": "off"
     },
@@ -1501,11 +1373,6 @@
     },
     "editor.accessibilitySupport": "auto",
     "editor.accessibilityPageSize": 10,
-    "editor.allowVariableFontsInAccessibilityMode": true,
-    // ═══════════════════════════════════════════════════════════════════════════
-    // 🔌 EXTENSION-SPECIFIC SETTINGS (Popular Extensions)
-    // ═══════════════════════════════════════════════════════════════════════════
-    // Prettier
     "prettier.enable": true,
     "prettier.singleQuote": true,
     "prettier.trailingComma": "es5",
@@ -1520,7 +1387,6 @@
     "prettier.quoteProps": "as-needed",
     "prettier.jsxSingleQuote": false,
     "prettier.bracketSameLine": false,
-    // ESLint
     "eslint.enable": true,
     "eslint.alwaysShowStatus": true,
     "eslint.format.enable": true,
@@ -1539,7 +1405,6 @@
         }
     ],
     "eslint.codeActionsOnSave.mode": "all",
-    // Material Icon Theme
     "material-icon-theme.activeIconPack": "angular",
     "material-icon-theme.files.associations": {},
     "material-icon-theme.folders.associations": {},
@@ -1551,7 +1416,6 @@
     "material-icon-theme.showReloadMessage": true,
     "material-icon-theme.showUpdateMessage": true,
     "material-icon-theme.showWelcomeMessage": true,
-    // Error Lens
     "errorLens.enabled": true,
     "errorLens.enabledDiagnosticLevels": [
         "error",
@@ -1579,7 +1443,6 @@
     ],
     "errorLens.statusBarIconsEnabled": true,
     "errorLens.statusBarMessageEnabled": true,
-    // GitLens
     "gitlens.currentLine.enabled": true,
     "gitlens.currentLine.pullRequests.enabled": true,
     "gitlens.hovers.currentLine.over": "line",
@@ -1595,7 +1458,6 @@
     "gitlens.blame.heatmap.enabled": true,
     "gitlens.blame.avatars": true,
     "gitlens.blame.compact": true,
-    // TODO Highlight
     "todohighlight.isEnable": true,
     "todohighlight.isCaseSensitive": false,
     "todohighlight.keywords": [
@@ -1660,7 +1522,6 @@
             "isWholeLine": false
         }
     ],
-    // Better Comments
     "better-comments.multilineComments": true,
     "better-comments.highlightPlainText": false,
     "better-comments.tags": [
@@ -1710,12 +1571,10 @@
             "italic": false
         }
     ],
-    // Path Intellisense
     "path-intellisense.autoSlashAfterDirectory": true,
     "path-intellisense.autoTriggerNextSuggestion": true,
     "path-intellisense.extensionOnImport": true,
     "path-intellisense.showHiddenFiles": true,
-    // Auto Rename Tag
     "auto-rename-tag.activationOnLanguage": [
         "html",
         "xml",
@@ -1729,9 +1588,6 @@
         "svelte",
         "astro"
     ],
-    // Bracket Pair Colorizer (now built-in, but for legacy)
-    "bracket-pair-colorizer-2.depreciation-notice": false,
-    // Indent Rainbow
     "indentRainbow.indicatorStyle": "light",
     "indentRainbow.lightIndicatorStyleLineWidth": 1,
     "indentRainbow.colors": [
@@ -1742,12 +1598,10 @@
     ],
     "indentRainbow.errorColor": "rgba(255, 18, 18, 0.2)",
     "indentRainbow.tabmixColor": "rgba(255, 128, 0, 0.2)",
-    // Live Server
     "liveServer.settings.donotShowInfoMsg": true,
     "liveServer.settings.donotVerifyTags": true,
     "liveServer.settings.port": 5500,
     "liveServer.settings.CustomBrowser": "chrome",
-    // Code Spell Checker
     "cSpell.enabled": true,
     "cSpell.language": "en",
     "cSpell.enableFiletypes": [
@@ -1755,8 +1609,6 @@
     ],
     "cSpell.showStatus": true,
     "cSpell.diagnosticLevel": "Hint",
-    // Output Colorizer
-    "outputColorizer.enable": true,
     "workbench.editor.tabActionLocation": "right",
     "terminal.integrated.enableVisualBell": false
 }
