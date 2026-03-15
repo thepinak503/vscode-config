@@ -15,7 +15,7 @@ irm https://raw.githubusercontent.com/thepinak503/vscode-config/refs/heads/main/
 ### Linux / macOS
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/thepinak503/vscode-config/refs/heads/main/code.sh | sh
+curl -fsSL https://raw.githubusercontent.com/thepinak503/vscode-config/refs/heads/main/code.sh -o code.sh && chmod +x code.sh && ./code.sh
 ```
 
 ---

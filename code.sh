@@ -167,6 +167,15 @@ echo "3. Install Both"
 echo "4. Exit"
 echo ""
 
+if [ ! -t 0 ]; then
+    echo "Error: This script requires interactive mode."
+    echo "Please download and run it manually:"
+    echo "  curl -fsSL https://raw.githubusercontent.com/thepinak503/vscode-config/refs/heads/main/code.sh -o code.sh"
+    echo "  chmod +x code.sh"
+    echo "  ./code.sh"
+    exit 1
+fi
+
 printf "Select option [1-4]: "
 read choice
 

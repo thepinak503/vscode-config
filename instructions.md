@@ -48,7 +48,7 @@ If multiple installations found, you'll be prompted to choose.
 ### Quick Install
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/thepinak503/vscode-config/refs/heads/main/code.sh | sh
+curl -fsSL https://raw.githubusercontent.com/thepinak503/vscode-config/refs/heads/main/code.sh -o code.sh && chmod +x code.sh && ./code.sh
 ```
 
 ### Manual Install
@@ -81,7 +81,7 @@ If multiple installations found, you'll be prompted to choose.
 ### Quick Install
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/thepinak503/vscode-config/refs/heads/main/code.sh | sh
+curl -fsSL https://raw.githubusercontent.com/thepinak503/vscode-config/refs/heads/main/code.sh -o code.sh && chmod +x code.sh && ./code.sh
 ```
 
 ### Manual Install
