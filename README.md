@@ -1,70 +1,67 @@
 # VSCode Config
 
-Personalized **VS Code settings** for a clean, productive setup.
-
----
-
-## What This Does
-
-- Backs up your existing `settings.json` automatically.
-- Downloads and applies the preferred `settings.json`.
-- Installs 100+ VS Code extensions.
-- Cross-Platform: Works on **Windows** and **Linux**.
-- Safe: Creates a `.bak` file before making changes.
+Personalized **VS Code settings** for a clean, productive setup with 100+ extensions.
 
 ---
 
 ## Quick Install
 
-### Linux
-
-```bash
-curl -fsSL https://raw.githubusercontent.com/thepinak503/vscode-config/refs/heads/main/code.sh | sh
-```
-
-### Windows
-
-Run this in **PowerShell**:
+### Windows (PowerShell)
 
 ```powershell
 irm https://raw.githubusercontent.com/thepinak503/vscode-config/refs/heads/main/code.ps1 | iex
 ```
 
----
-
-## Manual Usage
-
-### Linux
+### Linux / macOS
 
 ```bash
-# Make executable
-chmod +x code.sh
+curl -fsSL https://raw.githubusercontent.com/thepinak503/vscode-config/refs/heads/main/code.sh | sh
+```
 
-# Run
+---
+
+## Features
+
+- Backs up existing `settings.json` automatically
+- Installs 100+ VS Code extensions
+- Detects VS Code & VS Code Insiders
+- Supports System & User installations
+- Cross-Platform: Windows, Linux, macOS
+
+---
+
+## Manual Download
+
+### Linux / macOS
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/thepinak503/vscode-config/refs/heads/main/code.sh -o code.sh
+chmod +x code.sh
 ./code.sh
 ```
 
 ### Windows
 
 ```powershell
-# Run PowerShell script
+irm https://raw.githubusercontent.com/thepinak503/vscode-config/refs/heads/main/code.ps1 -o code.ps1
 .\code.ps1
 ```
 
-Both scripts offer a menu:
-1. Install settings.json
-2. Install Extensions
-3. Install Both
+---
+
+## Supported Installations
+
+| Platform | Editions |
+|----------|----------|
+| Windows | VS Code (System/User), Insiders (System/User) |
+| Linux | VS Code (System/User/Snap), Insiders (System/User/Snap) |
+| macOS | VS Code (System/User), Insiders (System/User) |
 
 ---
 
-## Notes
+## Full Instructions
 
-- **Backup:** Your old settings are saved as `settings.json.bak`.
-- **Target Locations:**
-  - Windows: `%AppData%\Code\User`
-  - Linux: `~/.config/Code/User`
-- You can manually edit or restore the backup anytime.
+See [instructions.md](instructions.md) for detailed platform-specific guide.
 
 ---
 
